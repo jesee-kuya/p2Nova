@@ -22,7 +22,7 @@ export default function CTASection() {
             </Button>
           </a>
           <a
-            href="https://medium.com/@okumufrank254/the-machine-learning-compute-protocol-and-our-future-5fd6a5a3f0c8"
+            href="https://paragraph.com/@gensyn/the-machine-learning-compute-protocol-and-our-future"
             target="_blank"
             rel="noopener noreferrer"
           >
