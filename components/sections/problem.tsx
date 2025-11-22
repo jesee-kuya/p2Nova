@@ -1,6 +1,6 @@
 export default function ProblemSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
@@ -23,8 +23,7 @@ export default function ProblemSection() {
             <div
               className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 text-white bg-cover bg-center relative overflow-hidden"
               style={{
-                backgroundImage:
-                  "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-BEUxuf4pEJ0KjXe1ZYcIIZDJdK44Zi.png)",
+                backgroundImage: "url(/images/image.png)",
               }}
             >
               {/* Overlay for text readability */}
@@ -44,8 +43,7 @@ export default function ProblemSection() {
             <div
               className="bg-gradient-to-br from-[#1EB39C] to-[#0B1E2D] rounded-xl p-8 text-white bg-cover bg-center relative overflow-hidden"
               style={{
-                backgroundImage:
-                  "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-z1SGwYs0kzJFnxqYIoMssmiT24qQQr.png)",
+                backgroundImage: "url(/images/image.png)",
               }}
             >
               {/* Overlay for text readability */}

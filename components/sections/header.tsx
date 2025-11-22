@@ -11,7 +11,7 @@ export default function Header() {
   const navLinks = [
     { label: "About", href: "#about" },
     { label: "Docs", href: "#docs" },
-    { label: "GitHub", href: "#github" },
+    { label: "GitHub", href: "https://github.com/jesee-kuya/p2Nova" },
     { label: "Join Team", href: "#team" },
   ]
 
