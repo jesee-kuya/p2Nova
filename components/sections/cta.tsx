@@ -21,13 +21,19 @@ export default function CTASection() {
               Developer Early Access
             </Button>
           </a>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-[#1EB39C] text-[#1EB39C] hover:bg-[#1EB39C] hover:text-[#0B1E2D] font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent"
+          <a
+            href="https://medium.com/@okumufrank254/the-machine-learning-compute-protocol-and-our-future-5fd6a5a3f0c8"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Read the Whitepaper
-          </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-[#1EB39C] text-[#1EB39C] hover:bg-[#1EB39C] hover:text-[#0B1E2D] font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent w-full sm:w-auto"
+            >
+              Read the Whitepaper
+            </Button>
+          </a>
         </div>
       </div>
     </section>
