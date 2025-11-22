@@ -1,7 +1,6 @@
 export default function Footer() {
   const socials = [
-    { label: "LinkedIn", href: "#" },
-    { label: "X", href: "#" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/p2nova/" },
     { label: "GitHub", href: "https://github.com/jesee-kuya/p2Nova" },
   ]
 

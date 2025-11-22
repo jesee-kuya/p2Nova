@@ -77,16 +77,24 @@ export default function TeamSection() {
         </div>
 
         <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+          <a
+            href="mailto:okumufrank254@outlook.com?subject=Joining%20the%20P2Nova%20team&body=Hey%2C%20I%27m%20%5BYour%20Name%5D%20I%20would%20like%20to%20talk%20to%20you%20to%20join%20the%20P2Nova%20team..."
+            className="inline-block"
           >
-            Join Our Team
-          </Button>
+            <Button
+              size="lg"
+              className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+            >
+              Join Our Team
+            </Button>
+          </a>
           <p className="text-gray-600 mt-4">
             Email us at{" "}
-            <a href="mailto:info@p2nova.cloud" className="text-[#E65C2B] font-semibold hover:underline">
-              info@p2nova.cloud
+            <a
+              href="mailto:okumufrank254@outlook.com?subject=Joining%20the%20P2Nova%20team&body=Hey%2C%20I%27m%20%5BYour%20Name%5D%20I%20would%20like%20to%20talk%20to%20you%20to%20join%20the%20P2Nova%20team..."
+              className="text-[#E65C2B] font-semibold hover:underline"
+            >
+              okumufrank254@outlook.com
             </a>
           </p>
         </div>
