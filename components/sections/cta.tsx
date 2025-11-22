@@ -13,12 +13,14 @@ export default function CTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="lg"
-            className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
-          >
-            Developer Early Access
-          </Button>
+          <a href="https://dashboard.p2nova.cloud" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
+            >
+              Developer Early Access
+            </Button>
+          </a>
           <Button
             size="lg"
             variant="outline"

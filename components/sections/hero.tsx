@@ -82,19 +82,15 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Button
-            size="lg"
-            className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
-          >
-            Join the Network
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-[#0B1E2D] text-[#0B1E2D] hover:bg-[#0B1E2D] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent"
-          >
-            Build on P2Nova
-          </Button>
+          <a href="https://dashboard.p2nova.cloud" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-[#0B1E2D] text-[#0B1E2D] hover:bg-[#0B1E2D] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent w-full sm:w-auto"
+            >
+              Build on P2Nova
+            </Button>
+          </a>
         </div>
       </div>
     </section>
