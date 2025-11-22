@@ -7,15 +7,21 @@ export default function FounderSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Image */}
           <div className="flex justify-center">
-            <div className="relative w-full max-w-sm">
+            <a
+              href="https://www.linkedin.com/in/frank-okumu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-full max-w-sm block group cursor-pointer"
+            >
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-xl z-10" />
               <Image
                 src="/images/design-mode/My%20ChatGPT%20image1.png"
                 alt="Frankie, Founder & CEO"
                 width={400}
                 height={500}
-                className="rounded-xl shadow-2xl"
+                className="rounded-xl shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]"
               />
-            </div>
+            </a>
           </div>
 
           {/* Right: Text */}
@@ -35,8 +41,8 @@ export default function FounderSection() {
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              P2Nova is building the infrastructure that will power the next generation of
-              AI applications — one where every device, everywhere, can contribute to the global compute network.
+              P2Nova is building the infrastructure that will power the next generation of AI applications — one where
+              every device, everywhere, can contribute to the global compute network.
             </p>
           </div>
         </div>
