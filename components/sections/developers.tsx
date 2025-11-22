@@ -1,19 +1,26 @@
+"use client"
+
+import { Globe, Zap, Brain } from "lucide-react"
+
 export default function DevelopersSection() {
   const cards = [
     {
-      icon: "🌐",
+      icon: Globe,
       title: "Host Web Apps",
       description: "Fast, decentralized web hosting powered by the P2Nova network.",
+      color: "text-[#1EB39C]", // Teal
     },
     {
-      icon: "🤖",
+      icon: Zap,
       title: "Run AI Inference",
       description: "Real-time distributed execution of your AI models at scale.",
+      color: "text-[#E65C2B]", // Copper
     },
     {
-      icon: "📚",
+      icon: Brain,
       title: "Train Models",
       description: "Global collaborative compute for training your AI models.",
+      color: "text-[#0B1E2D]", // Midnight Blue
     },
   ]
 
@@ -35,7 +42,9 @@ export default function DevelopersSection() {
               key={index}
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100"
             >
-              <div className="text-5xl mb-4">{card.icon}</div>
+              <div className={`mb-6 p-4 rounded-full bg-gray-50 w-fit ${card.color}`}>
+                <card.icon size={40} strokeWidth={1.5} />
+              </div>
               <h3 className="font-space-grotesk text-2xl font-bold text-[#0B1E2D] mb-3">{card.title}</h3>
               <p className="text-gray-600 leading-relaxed">{card.description}</p>
             </div>
