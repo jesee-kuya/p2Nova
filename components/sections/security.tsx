@@ -31,8 +31,8 @@ export default function SecuritySection() {
           <div className="flex justify-center">
             <div className="relative w-full max-w-sm h-80 rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VSIMmyx2vPOY4Y5QXqiK3BksZzQd9O.png"
-                alt="Security shield with globe representing open and secure design"
+                src="/images/oip1.webp"
+                alt="Network diagram showing secure firewall protection between LAN and WAN"
                 className="w-full h-full object-cover"
               />
             </div>

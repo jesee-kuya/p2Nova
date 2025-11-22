@@ -61,8 +61,8 @@ export default function TeamSection() {
         <div className="flex justify-center mb-12">
           <div className="relative w-full max-w-2xl h-64 rounded-xl overflow-hidden shadow-lg">
             <img
-              src="/images/design-mode/image.png"
-              alt="Security shield with globe representing team collaboration"
+              src="/images/secure-network.webp"
+              alt="Secure network of connected locks representing decentralized security"
               className="w-full h-full object-cover rounded-xl mx-0"
             />
           </div>
