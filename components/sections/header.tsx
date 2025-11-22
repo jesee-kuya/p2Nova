@@ -32,7 +32,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a href="https://dashboard.p2nova.cloud" target="_blank" rel="noopener noreferrer">
+          <a href="https://p2novadash.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Button className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300">
               Get Started
             </Button>
@@ -64,7 +64,7 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <a href="https://dashboard.p2nova.cloud" target="_blank" rel="noopener noreferrer" className="w-full">
+            <a href="https://p2novadash.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full">
               <Button className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 w-full">
                 Get Started
               </Button>

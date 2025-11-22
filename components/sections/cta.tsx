@@ -13,7 +13,7 @@ export default function CTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://dashboard.p2nova.cloud" target="_blank" rel="noopener noreferrer">
+          <a href="https://p2novadash.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               className="bg-[#E65C2B] hover:bg-[#d14a1a] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:shadow-lg w-full sm:w-auto"

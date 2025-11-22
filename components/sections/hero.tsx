@@ -82,7 +82,7 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <a href="https://dashboard.p2nova.cloud" target="_blank" rel="noopener noreferrer" className="inline-block">
+          <a href="https://p2novadash.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block">
             <Button
               size="lg"
               variant="outline"
