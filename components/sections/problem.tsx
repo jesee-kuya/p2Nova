@@ -23,7 +23,7 @@ export default function ProblemSection() {
             <div
               className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 text-white bg-cover bg-center relative overflow-hidden"
               style={{
-                backgroundImage: "url(/images/image.png)",
+                backgroundImage: "url(/images/centralized-data-center.jpg)",
               }}
             >
               {/* Overlay for text readability */}
