@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function HeroSection() {
   return (
@@ -68,29 +69,47 @@ export default function HeroSection() {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Headline */}
-        <h1 className="font-space-grotesk text-5xl sm:text-6xl lg:text-7xl font-bold text-[#0B1E2D] mb-6 leading-tight text-balance">
-          Open. Secure. Powered by Everyone.
-        </h1>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Text content */}
+          <div className="text-left">
+            {/* Headline */}
+            <h1 className="font-space-grotesk text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0B1E2D] mb-6 leading-tight text-balance">
+              Open. Secure. Powered by Everyone.
+            </h1>
 
-        {/* Subtext */}
-        <p className="text-lg sm:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed text-balance">
-          P2Nova is the decentralized AI cloud built on idle devices around the world — enabling developers to train,
-          run, and host applications without centralized control.
-        </p>
+            {/* Subtext */}
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed text-pretty">
+              P2Nova is the decentralized AI cloud built on idle devices around the world — enabling developers to
+              train, run, and host applications without centralized control.
+            </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <a href="https://p2novadash.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-[#0B1E2D] text-[#0B1E2D] hover:bg-[#0B1E2D] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent w-full sm:w-auto"
-            >
-              Build on P2Nova
-            </Button>
-          </a>
+            {/* CTA Button */}
+            <a href="https://p2novadash.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-[#0B1E2D] text-[#0B1E2D] hover:bg-[#0B1E2D] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent"
+              >
+                Build on P2Nova
+              </Button>
+            </a>
+          </div>
+
+          {/* Right side - Image container */}
+          <div className="relative flex items-center justify-center">
+            <div className="relative w-full max-w-lg aspect-square rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+              <Image
+                src="/images/p2nova-20logo1.png"
+                alt="P2Nova - Decentralized AI Cloud"
+                fill
+                className="object-contain p-8 bg-white"
+                priority
+              />
+            </div>
+            {/* Decorative glow effect behind image */}
+            <div className="absolute -inset-4 bg-gradient-to-br from-[#1EB39C]/20 via-[#E65C2B]/10 to-[#0B1E2D]/20 rounded-3xl blur-2xl -z-10" />
+          </div>
         </div>
       </div>
     </section>
