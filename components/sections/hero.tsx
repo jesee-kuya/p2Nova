@@ -70,16 +70,14 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Text content */}
-          <div className="text-left">
-            {/* Headline */}
-            <h1 className="font-space-grotesk text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0B1E2D] mb-6 leading-tight text-balance">
-              Open. Secure. Powered by Everyone.
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Left side - Text content - takes 5 columns */}
+          <div className="text-left lg:col-span-5">
+            <h1 className="font-space-grotesk text-3xl sm:text-4xl font-bold text-[#0B1E2D] mb-4 leading-tight text-balance">
+              Powered By U, For U!
             </h1>
 
-            {/* Subtext */}
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed text-pretty">
+            <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed text-pretty">
               P2Nova is the decentralized AI cloud built on idle devices around the world — enabling developers to
               train, run, and host applications without centralized control.
             </p>
@@ -89,21 +87,22 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#0B1E2D] text-[#0B1E2D] hover:bg-[#0B1E2D] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 bg-transparent"
+                className="border-2 border-[#0B1E2D] text-[#0B1E2D] hover:bg-[#0B1E2D] hover:text-white font-semibold px-6 py-5 text-base rounded-lg transition-all duration-300 bg-transparent"
               >
                 Build on P2Nova
               </Button>
             </a>
           </div>
 
-          {/* Right side - Image container */}
-          <div className="relative flex items-center justify-center">
-            <div className="relative w-full max-w-lg aspect-square rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+          {/* Right side - Dashboard image - takes 7 columns */}
+          <div className="relative flex items-center justify-center lg:col-span-7">
+            <div className="relative w-full rounded-xl overflow-hidden shadow-2xl border border-gray-200">
               <Image
-                src="/images/p2nova-20logo1.png"
-                alt="P2Nova - Decentralized AI Cloud"
-                fill
-                className="object-contain p-8 bg-white"
+                src="/images/p2nova-dashboard.png"
+                alt="P2Nova Dashboard - Decentralized AI Cloud Platform"
+                width={1200}
+                height={800}
+                className="object-cover w-full h-auto"
                 priority
               />
             </div>
