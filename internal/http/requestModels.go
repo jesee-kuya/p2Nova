@@ -7,3 +7,8 @@ type RequestUser struct {
 	Username  string `json:"username" binding:"required"`
 	Password  string `json:"password" binding:"required"`
 }
+
+type RequestLogin struct {
+	Username string `json:"username" binding:"required"`
+	Password string `json:"password" binding:"required"`
+}
