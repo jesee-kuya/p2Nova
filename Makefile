@@ -1,9 +1,10 @@
 # ---------- config ----------
+include .env
+export
+
 APP_NAME := p2Nova
 SRC      := src/main.go
-
 DB_URL := postgres://$(DB_USER):$(DB_PASSWORD)@$(DB_HOST):$(DB_PORT)/$(DB_NAME)?sslmode=$(DB_SSLMODE)
-
 MIGRATIONS_DIR := migrations
 
 # ---------- migrations (explicit & ordered) ----------
