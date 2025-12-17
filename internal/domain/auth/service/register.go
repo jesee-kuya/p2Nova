@@ -3,12 +3,12 @@ package service
 import (
 	"fmt"
 
-	"github.com/jesee-kuya/p2Nova/internal/http"
+	"github.com/jesee-kuya/p2Nova/internal/handler"
 	"github.com/jesee-kuya/p2Nova/internal/model"
 	"golang.org/x/crypto/bcrypt"
 )
 
-func (s *AuthServiceImpl) Register(requestUser *http.RequestUser) (*model.User, error) {
+func (s *AuthServiceImpl) Register(requestUser *handler.RequestUser) (*model.User, error) {
 	if requestUser.Email == "" ||
 		requestUser.FirstName == "" ||
 		requestUser.LastName == "" ||

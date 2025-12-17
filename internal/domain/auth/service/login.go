@@ -3,11 +3,11 @@ package service
 import (
 	"fmt"
 
-	"github.com/jesee-kuya/p2Nova/internal/http"
+	"github.com/jesee-kuya/p2Nova/internal/handler"
 	"github.com/jesee-kuya/p2Nova/internal/model"
 )
 
-func (s *AuthServiceImpl) Login(requestLogin *http.RequestLogin) (*model.User, error) {
+func (s *AuthServiceImpl) Login(requestLogin *handler.RequestLogin) (*model.User, error) {
 	user := &model.User{}
 	err := ValidateEmail(requestLogin.Username)
 	if err != nil {

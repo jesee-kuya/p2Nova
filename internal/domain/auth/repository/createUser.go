@@ -3,11 +3,11 @@ package repository
 import (
 	"fmt"
 
-	"github.com/jesee-kuya/p2Nova/internal/http"
+	"github.com/jesee-kuya/p2Nova/internal/handler"
 	"github.com/jesee-kuya/p2Nova/internal/model"
 )
 
-func (r *AuthRepositoryImpl) CreateUser(requestUser *http.RequestUser) (*model.User, error) {
+func (r *AuthRepositoryImpl) CreateUser(requestUser *handler.RequestUser) (*model.User, error) {
 	user := &model.User{
 		FirstName: requestUser.FirstName,
 		LastName:  requestUser.LastName,

@@ -1,4 +1,4 @@
-package http
+package handler
 
 type RequestUser struct {
 	FirstName string `json:"first_name" binding:"required"`
