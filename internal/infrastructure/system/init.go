@@ -33,7 +33,7 @@ func Init() *P2Nova {
 	}
 
 	handlers := Handlers{
-		AuthHandler: &authenticationHandler,
+		AuthHandler: authenticationHandler,
 	}
 
 	return &P2Nova{
