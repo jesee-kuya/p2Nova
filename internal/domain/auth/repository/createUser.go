@@ -13,7 +13,7 @@ func (r *AuthRepositoryImpl) CreateUser(requestUser *handler.RequestUser) (*mode
 		LastName:  requestUser.LastName,
 		Email:     requestUser.Email,
 		Username:  requestUser.Username,
-		Password:  requestUser.Password,
+		PasswordHash:  requestUser.Password,
 	}
 
 	if err := r.Db.Create(user).Error; err != nil {

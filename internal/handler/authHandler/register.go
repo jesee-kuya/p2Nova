@@ -25,9 +25,9 @@ func (h *AuthHandlerImpl) Register(c *gin.Context) {
 		return
 	}
 
-	user.Password = ""
+	user.PasswordHash = ""
 
-	c.JSON(http.StatusCreated, gin.H{
+	c.JSON(http.StatusOK, gin.H{
 		"user":    user,
 		"message": "user created successfully",
 	})
