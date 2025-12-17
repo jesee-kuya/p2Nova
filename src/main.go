@@ -1,18 +1,11 @@
 package main
 
-import (
-	"log"
-
-	"github.com/jesee-kuya/p2Nova/internal/infrastructure/database"
-)
+import "github.com/jesee-kuya/p2Nova/internal/infrastructure/system"
 
 func main() {
-	db, err := database.NewConnection()
-	if err != nil {
-		log.Fatal(err)
-	}
+	sys := system.Init()
 
-	log.Println("Database connection successful")
+	router := sys.SetUpRoutes()
 
-	_ = db
+	router.Run(":8080")
 }
