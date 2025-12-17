@@ -21,5 +21,5 @@ type Services struct {
 }
 
 type Handlers struct {
-	AuthHandler *authHandler.AuthHandler
+	AuthHandler authHandler.AuthHandler
 }
