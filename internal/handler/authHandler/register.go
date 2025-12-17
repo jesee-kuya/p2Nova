@@ -11,6 +11,24 @@ func (h *AuthHandlerImpl) Register(c *gin.Context) {
 	var reqUser handler.RequestUser
 
 	if err := c.ShouldBindJSON(&reqUser); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{})
+		c.JSON(http.StatusBadRequest, gin.H{
+			"error": "invalid request payload",
+		})
+		return
 	}
+
+	user, err := h.AuthService.Register(&reqUser)
+	if err != nil {
+		c.JSON(http.StatusConflict, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	user.Password = ""
+
+	c.JSON(http.StatusCreated, gin.H{
+		"user":    user,
+		"message": "user created successfully",
+	})
 }
